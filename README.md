@@ -3,7 +3,7 @@
 Paprika is a toolbox for creating short clips from multiple png files.
 
 <p>
-<img src="https://raw.githubusercontent.com/alvoras/paprika/master/media/clip_export.gif" />
+<img src="https://raw.githubusercontent.com/Alvoras/paprika/master/media/clip_export.gif" />
 </p>
 
 # Requirements
