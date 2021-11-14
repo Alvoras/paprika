@@ -12,7 +12,7 @@ import (
 )
 
 func ToMP4(outFilepath string, steps []string) error {
-	ffmpegPath := "/usr/bin/ffmpeg"
+	ffmpegPath := "ffmpeg"
 	var cmdArgs = []string{
 		"-y",
 		"-progress",
@@ -102,7 +102,7 @@ func ToMP4(outFilepath string, steps []string) error {
 func SplitMP4(outFilepath string, tempDest string, totalFrames int) error {
 	progressQuitChan := make(chan bool)
 
-	ffmpegPath := "/usr/bin/ffmpeg"
+	ffmpegPath := "ffmpeg"
 	var cmdArgs = fmt.Sprintf("-y -i %s -nostats -ss %%dms -t %%dms %s/%%d.mp4", outFilepath, tempDest)
 
 	msPerFrame := 1000 / Fps
@@ -139,7 +139,7 @@ func ApplyCrossfade(outFilepath string, tempDest string, totalFrames int) error 
 	progressQuitChan := make(chan bool)
 	msPerFrame := 1000 / Fps
 	totalDurationMs := totalFrames * msPerFrame
-	ffmpegPath := "/usr/bin/ffmpeg"
+	ffmpegPath := "ffmpeg"
 	fadeOffset := totalDurationMs/4
 	fadeDuration := (totalDurationMs/2)-1000
 

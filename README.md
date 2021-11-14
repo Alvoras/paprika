@@ -2,6 +2,16 @@
 
 Paprika is a toolbox for creating short clips from multiple png files.
 
+<p>
+<img src="https://raw.githubusercontent.com/alvoras/paprika/master/media/clip_export.mp4" />
+</p>
+
+# Requirements
+
+This program is mainly a wrapper around ffmpeg. As such, you must have ffmpeg in your PATH.
+
+> :warning: The crossfade effect only works with ffmpeg >= 4.4
+
 # Installation
 
 Either build the binary from source or grab the latest release.
@@ -36,10 +46,10 @@ $ ls -l ./frames
 ```
 
 > :warning: The frames files **MUST** be in the form **NNNN.png, eg. "0000.png, 0001.png, [...], 9999.png"**
-
-> :warning: They also must be continuous, as the missing numbers will result in black frames in the final clip
-
-> :warning: Keep in mind that the first frame is 0000.png
+> 
+> They also must be continuous, as the missing numbers will result in black frames in the final clip
+>
+> Keep in mind that the first frame is 0000.png
 
 ## Clip
 
@@ -170,6 +180,9 @@ It is also possible to export the clip as a gif. Keep in mind that this gif will
 ## Extract
 
 An extract subcommand is available as well.
+<p>
+<img src="https://raw.githubusercontent.com/alvoras/paprika/master/media/extract.png" />
+</p>
 
 ```
 Usage:
