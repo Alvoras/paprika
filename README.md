@@ -14,7 +14,7 @@ This program is mainly a wrapper around ffmpeg. As such, you must have ffmpeg in
 
 # Installation
 
-Either build the binary from source or grab the latest release.
+Either build the binary from source or grab the [latest release](https://github.com/Alvoras/paprika/releases/latest).
 
 If you have a working Golang installation, you can build from source :
 
